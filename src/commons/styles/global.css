@@ -1,0 +1,6 @@
+:global(body) {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fdfdfd;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

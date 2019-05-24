@@ -1,0 +1,30 @@
+:root {
+  /* Transitions */
+  --default-opacity-trasition: opacity 0.3s ease;
+  --default-background-trasition: background 0.3s ease;
+  --default-color-trasition: color 0.3s ease;
+
+  /* Typography */
+  --font-size: 18px;
+  --color-selection: #f7fda2;
+  --color-hightlight: #a1f79b;
+  --color-typography: #303030;
+
+  /* Links */
+  --default-link: hsla(207, 95%, 32%, 1);
+  --default-link-disabled: hsl(207, 61%, 75%);
+  --visited-link: hsla(179, 39%, 27%, 1);
+
+  /* Buttons */
+  /* FORMAT: --{type}-{color}-[{state}]-[{peace}]-button */
+  --W100: hsl(0, 0%, 100%);
+  --P400: hsl(216, 87%, 44%);
+  --P400H: hsla(216, 87%, 44%, 0.1);
+  --G400: hsl(228, 14%, 93%);
+  --G300: hsl(220, 16%, 96%);
+  --B700: hsl(0, 0%, 0%);
+  --R400: hsl(12, 91%, 46%);
+  --R400H: hsla(12, 91%, 46%, 0.1);
+  --Z400: hsl(160, 100%, 26%);
+  --Z400H: hsla(160, 100%, 26%, 0.1);
+}

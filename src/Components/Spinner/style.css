@@ -1,0 +1,27 @@
+@keyframes progress{
+    0%{
+        left: -120%;
+    }
+    100% {
+        left: 120%;
+    }
+}
+
+.spinner {
+    background: hsla(0, 0%, 100%, 0.5);
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.spinner_inner {
+    content: ' ';
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    position: absolute;
+    left: -120%;
+    background: hsla(0, 0%, 100%, 0.8);
+    opacity: 1;
+    animation: progress 2.5s ease-in-out infinite;
+}

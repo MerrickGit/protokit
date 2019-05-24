@@ -1,0 +1,300 @@
+/* ---- @common styles ----- */
+.button_wrapper {
+  position: relative;
+  background: transparent;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.basic_button {
+  border-radius: 4px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--default-opacity-trasition), var(--default-color-trasition),
+    var(--default-background-trasition);
+  font-weight: 700;
+  min-width: 40px;
+  letter-spacing: -0.2px;
+}
+
+.hide_when_loading {
+  transition: var(--default-opacity-trasition);
+}
+
+.spinner_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+/* ---- @SIZES ----- */
+.large {
+  font-size: 19px;
+  padding: 0 25px;
+  border-radius: 5px;
+  height: 55px;
+}
+.large :global(.fa) {
+  font-size: 25px;
+}
+
+.large.left_icon {
+  padding-left: 0;
+}
+.large.left_icon :global(.fa) {
+  padding-left: 17px;
+  padding-right: 14px;
+}
+
+.large.right_icon {
+  padding-right: 0;
+}
+.large.right_icon :global(.fa) {
+  padding-left: 14px;
+  padding-right: 17px;
+}
+
+.large.center_icon {
+  padding-right: 0;
+  padding-left: 0;
+  min-width: auto;
+}
+.large.center_icon :global(.fa) {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 30px;
+}
+
+.large.rounded {
+  border-radius: 30px;
+}
+.large.rounded.center_icon :global(.fa) {
+  border-radius: 50%;
+  padding-right: 13px;
+  padding-left: 13px;
+}
+/* ------------------------- */
+.medium {
+  font-size: 15px;
+  padding: 0 17px;
+  height: 34px;
+}
+
+.medium :global(.fa) {
+  font-size: 20px;
+}
+
+.medium.left_icon {
+  padding-left: 0;
+}
+.medium.left_icon :global(.fa) {
+  padding-left: 12px;
+  padding-right: 9px;
+}
+
+.medium.right_icon {
+  padding-right: 0;
+}
+.medium.right_icon :global(.fa) {
+  padding-left: 9px;
+  padding-right: 12px;
+}
+
+.medium.center_icon {
+  padding-right: 0;
+  padding-left: 0;
+  min-width: auto;
+}
+.medium.center_icon :global(.fa) {
+  font-size: 22px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.medium.rounded {
+  border-radius: 17px;
+}
+/* ------------------------------ */
+
+/* ------------------------- */
+.fluid {
+  width: 100%;
+}
+
+/* ------- SIZES ------ */
+
+/* ---- @PRIMARY DEFAULT BUTTON ----- */
+.primary_default {
+  background: var(--P400);
+  color: var(--W100);
+}
+.primary_default:hover {
+  opacity: 0.8;
+}
+.primary_default:active {
+  opacity: 0.95;
+}
+.button_wrapper[disabled] .primary_default,
+.button_wrapper[disabled] .primary_default:hover {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+/* ----- PRIMARY DEFAULT BUTTON ------ */
+
+/* ---- @TEXT DEFAULT BUTTON ----- */
+.text_default {
+  color: var(--P400);
+  background: transparent;
+}
+.text_default:hover {
+  background: var(--P400H);
+}
+.text_default:active {
+  opacity: 0.95;
+}
+.button_wrapper[disabled] .text_default,
+.button_wrapper[disabled] .text_default:hover {
+  background: var(--P400H);
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+/* ----- TEXT DEFAULT BUTTON ------ */
+
+/* ---- @PRIMARY NEUTRAL BUTTON ----- */
+.primary_neutral {
+  background: var(--G400);
+  color: var(--B700);
+}
+.primary_neutral:hover {
+  opacity: 0.8;
+}
+.primary_neutral:active {
+  opacity: 0.95;
+}
+.button_wrapper[disabled] .primary_neutral,
+.button_wrapper[disabled] .primary_neutral:hover {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+/* ----- PRIMARY NAUTRAL BUTTON ------ */
+
+/* ----- @TEXT NEUTRAL BUTTON ------- */
+.text_neutral {
+  color: var(--B700);
+  border-color: transparent;
+  background: transparent;
+}
+.text_neutral:hover {
+  background: var(--G300);
+}
+.text_neutral:active {
+  opacity: 0.95;
+}
+.button_wrapper[disabled] .text_neutral,
+.button_wrapper[disabled] .text_neutral:hover {
+  background: var(--G300);
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+/* ----- TEXT TYPE ------- */
+
+/* ------- @PRIMARY NEGATIVE ------- */
+.primary_negative {
+  background: var(--R400);
+  color: var(--W100);
+}
+.primary_negative:hover {
+  opacity: 0.8;
+}
+.primary_negative:active {
+  opacity: 0.95;
+}
+.button_wrapper[disabled] .primary_negative,
+.button_wrapper[disabled] .primary_negative:hover {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+/* ------ PRIMARY NEGATIVE ------- */
+
+/* ----- @TEXT NEGATIVE BUTTON ------- */
+.text_negative {
+  color: var(--R400);
+  border-color: transparent;
+  background: transparent;
+}
+.text_negative:hover {
+  background: var(--R400H);
+}
+.text_negative:active {
+  opacity: 0.95;
+}
+.button_wrapper[disabled] .text_negative,
+.button_wrapper[disabled] .text_negative:hover {
+  background: var(--R400H);
+  border-color: transparent;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+/* ----- TEXT NEGATIVE ------- */
+
+/* ------ @PRIMARY POSITIVE BUTTON  ---------- */
+.primary_positive {
+  color: var(--W100);
+  background: var(--Z400);
+}
+.primary_positive:hover {
+  opacity: 0.8;
+}
+.primary_positive:active {
+  opacity: 0.95;
+}
+.button_wrapper[disabled] .primary_positive,
+.button_wrapper[disabled] .primary_positive:hover {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+/* ------- PRIMARY POSITIVE BUTTON -------- */
+
+/* ------ @TEXT POSITIVE BUTTON  ---------- */
+.text_positive {
+  color: var(--Z400);
+  border-color: transparent;
+  background: transparent;
+}
+.text_positive:hover {
+  background: var(--Z400H);
+}
+.text_positive:active {
+  opacity: 0.95;
+}
+.button_wrapper[disabled] .text_positive,
+.button_wrapper[disabled] .text_positive:hover {
+  background: var(--Z400H);
+  border-color: transparent;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+/* ------- TEXT POSITIVE BUTTON -------- */
+
+/* ------- @LOADING STATE BUTTON --------- */
+.button_wrapper .basic_button.loading {
+  opacity: 0.8;
+}
+
+.basic_button.loading .hide_when_loading {
+  opacity: 0;
+}
+
+.basic_button.loading .spinner_wrapper {
+  opacity: 1;
+}
+/* ------- LOADING STATE BUTTON --------- */

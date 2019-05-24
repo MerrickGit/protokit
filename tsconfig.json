@@ -1,0 +1,35 @@
+{
+  //  "paths": {
+  //    "#/*": ["*"]
+  //  },
+  "files": ["./src/index.ts"],
+  "exclude": ["node_modules", "**/__tests__/*"],
+  "include": ["./typings.d.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+
+    //    "sourceMap": true,
+    "jsx": "react",
+    "target": "esnext",
+    "moduleResolution": "node",
+    //    "incremental": true,
+    //    "noEmit": true,
+    //    "allowJs": false,
+    "module": "esnext",
+    "esModuleInterop": true,
+
+    "declaration": true,
+    "declarationDir": "./dist/lib",
+    "emitDeclarationOnly": true,
+    //    "noImplicitAny": true,
+    //    "noImplicitReturns": true,
+    //    "noImplicitThis": true,
+    //    "noResolve": true,
+    //    "strictBindCallApply": true,
+    //    "strictFunctionTypes": true,
+    //    "strictNullChecks": true,
+    "types": ["node", "react"],
+    "lib": ["esnext", "dom"]
+  }
+}
