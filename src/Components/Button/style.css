@@ -18,7 +18,7 @@
   transition: var(--default-opacity-trasition), var(--default-color-trasition),
     var(--default-background-trasition);
   font-weight: 700;
-  min-width: 40px;
+  min-width: 44px;
   letter-spacing: -0.2px;
 }
 
