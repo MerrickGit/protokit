@@ -22,7 +22,8 @@
     "build": "webpack",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "chromatic": "chromatic --project-token=9jfdodrnwhv"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
@@ -45,6 +46,7 @@
     "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-minify": "^0.5.0",
+    "chromatic": "^5.3.0",
     "css-loader": "^2.1.1",
     "eslint": "^5.15.3",
     "eslint-plugin-react": "^7.12.4",
