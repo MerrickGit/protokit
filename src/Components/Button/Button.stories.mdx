@@ -1,0 +1,24 @@
+import { Meta, Story, Canvas, Preview, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Button } from './index';
+
+<Meta title="General/Button" component={Button} />
+
+# Button
+
+is story for component
+
+export const Template = (args) => <Button {...args} />;
+
+<Canvas>
+  <Story name="primary" args={{ type: 'primary', label: 'Any text' }}>
+    {Template.bind({})}
+  </Story>
+  <Story name="text" args={{ type: 'text', label: 'Any text' }}>
+    {Template.bind({})}
+  </Story>
+  <Story name="disabled" args={{ type: 'text', label: 'Any text', disabled: true }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable of={Button} />

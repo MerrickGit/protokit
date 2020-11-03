@@ -9,16 +9,16 @@ const config = ({ config }) => {
       };
     }
 
-    if (el.test.toString() === /\.(mjs|jsx?)$/.toString()) {
-      arr[index] = {
-        test: /\.(m?js|jsx|ts|tsx)$/,
-        exclude: /(node_modules|dist)/,
-        use: [{ loader: 'babel-loader?cacheDirectory' }]
-      };
-    }
+    // if (el.test.toString() === /\.(mjs|jsx?)$/.toString()) {
+    //   arr[index] = {
+    //     test: /\.(m?js|jsx|ts|tsx)$/,
+    //     exclude: /(node_modules|dist)/,
+    //     use: [{ loader: 'babel-loader?cacheDirectory' }]
+    //   };
+    // }
   });
 
-  config.resolve.extensions.push('.ts', '.tsx');
+  // config.resolve.extensions.push('.ts', '.tsx');
   config.resolve.alias = {
     '#': path.resolve(__dirname, '..', 'src')
   };
