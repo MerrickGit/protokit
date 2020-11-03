@@ -1,7 +1,10 @@
-name: Node CI
+name: CHROMATIC
 
 on:
   push:
+    branches:
+      - master
+  pull_request:
     branches:
       - master
 
